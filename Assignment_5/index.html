@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mike's Gym - Home</title>
+</head>
+<body> 
+  <!-- Nav Bar -->
+
+  <section>
+  <nav class="nav">
+    <input class="nav__trigger-input" type="checkbox" id="trigger" aria-label="open the navigation"/>
+    <label class="nav__trigger-finger" for="trigger">
+      <span></span>
+    </label>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="index.html" class="nav__link">
+          <span class="nav__text">
+            Home
+          </span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#hoi" class="nav__link">
+          <span class="nav__text">
+            About
+          </span>
+        </a>
+        <input class="nav__submenu-trigger-input" type="checkbox" id="submenu-trigger" />
+        <label class="nav__submenu-trigger-finger" for="submenu-trigger"></label>
+        <ul class="nav__list-child">
+          <li class="nav__item">
+            <a href="aboutus.html" class="nav__link">
+              <span class="nav__text">
+                About us
+              </span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="courses.html" class="nav__link">
+              <span class="nav__text">
+                About our courses
+              </span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a href="login.html" class="nav__link">
+          <span class="nav__text">
+            Login
+          </span>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <span>
+            <button class="logoutbutton" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><h1 class="logoutbutton">Log Out</h1></button>
+
+            <div id="id01" class="modal">
+  
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="logoutimgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="logoutcontainer">
+                  <button type="submit">Log Out</button>
+                </div>
+
+                <div class="logoutcontainer" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancel">Cancel</button> 
+                  <span class="frgtpsw"> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#">Forgot Password</a></span>
+                </div>
+              </form>
+            </div>
+
+            <script>
+              // Get the modal
+              var modal = document.getElementById('id01');
+
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+              if (event.target == modal) {
+              modal.style.display = "none";
+              }
+              }
+            </script>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  </section>
+
+  <section class="blanksection">
+    <div>
+      &nbsp;
+    </div>
+  </section>
+
+  <!-- Section 1 -->
+
+ <section class="tile-wrapper">
+  <div id="gradient"> </div>
+  <div class="tilecontainer">
+    <div class="tile">
+      <div class="tileimgcontainer">
+        <img class="tileimg" src="static/alora-griffiths-dr0TJa-zYQo-unsplash.jpg" alt="Woman resting on bench">   
+      </div>
+      <div class="tileinfo">
+        FIND COMMUNITY 
+      </div>
+    </div>
+    <div class="tile">
+      <div class="tileimgcontainer">
+        <img class="tileimg" src="Static/danielle-cerullo-CQfNt66ttZM-unsplash.jpg" alt="Row of dumbells">
+      </div>
+      <div class="tileinfo">
+        USE OUR STATE OF THE ART EQUIPMENT
+      </div>
+    </div>
+    <div class="tile">
+      <div class="tileimgcontainer">
+        <img src="Static/sven-mieke-MsCgmHuirDo-unsplash.jpg" alt="Running machines" class="tileimg">
+      </div>
+      <div class="tileinfo">
+        JOIN ONE OF OUR MANY SPECIALIZED PROGRAMS
+      </div>
+    </div>
+  </div>
+  <div id="reversegradient"> </div>
+ </section>
+
+ <!-- Footer -->
+
+ <footer>
+  <div class="bottom">
+      <div class="footinfo">
+          <div class="foothead">Info</div>
+          <div class="location">
+              <p class="tiny"><i class="fas fa-map-marker-alt"></i>Real City, UT 55555 United States</p>
+          </div>
+          <div class="email">
+              <p class="tiny"><i class="far fa-envelope"></i> example@notreal.com</p>
+          </div>
+          <div class="phone">
+              <p class="tiny"><i class="fas fa-mobile-alt"></i> Call Us: (555)555-5555</p>
+          </div>                
+      </div>
+      <div class="footinfo">
+          <div class="foothead">Social</div>
+          <div class="media">
+              <a class="home" href="#"><p class="tiny"><i class="fab fa-facebook"></i> Facebook </p></a>
+          </div>
+          <div class="media">
+              <a class="home" href="#"><p class="tiny"><i class="fab fa-twitter"></i> Twitter </p></a>
+          </div>
+          <div class="media">
+              <a class="home" href="#"><p class="tiny"><i class="fab fa-youtube"></i> Youtube </p></a>
+          </div>
+          <div class="media">
+              <a class="home" href="#"><p class="tiny"><i class="fab fa-instagram"></i> Instagram </p></a>
+          </div>
+      </div>
+  </div>
+</footer>
+  
+</body>
+</html>
